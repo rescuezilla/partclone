@@ -215,7 +215,7 @@ if test $reiser4_version -lt 1 ; then
     reiser4_version="$reiser4_version.$reiser4_version_major.$reiser4_version_minor; bad"
     AC_MSG_RESULT($reiser4_version)
     AC_MSG_ERROR(Please upgrade your libreiser4 to 1.0.6 or newer version!)
-elif test $reiser4_version -ge 1 -a $reiser4_version_minor -lt 6  ; then
+elif test $reiser4_version -ge 1 -a $reiser4_version_major -eq 0 -a $reiser4_version_minor -lt 6  ; then
     reiser4_version="$reiser4_version.$reiser4_version_major.$reiser4_version_minor; suggest you upgrade the library!"
     AC_MSG_RESULT($reiser4_version)
     AC_MSG_ERROR(Please upgrade your libreiser4 to 1.0.6 or newer version!)
